@@ -1,0 +1,351 @@
+{
+  "participants": [
+    {
+      "name": "Piotr Konefal"
+    },
+    {
+      "name": "Sebastian Kut"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598551053242,
+      "content": "Tam masz pierwsza zakladke general a na nastepnej mozesz przetestowac maila",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598551023851,
+      "content": "Skonfiguruj smtp ustawienia jakie masz w swoim mailu i powinno smigac formy",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598550993933,
+      "photos": [
+        {
+          "uri": "https://interncache-prn.fbcdn.net/v/t1.15752-0/q65/p480x480/118590041_687619678496186_8186939017253720495_n.jpg?_nc_sid=73a6a0&efg=eyJ1cmxnZW4iOiJwaHBfdXJsZ2VuX2NsaWVudC9pbW9nZW46RFlJTWVkaWFVdGlscyJ9&_nc_ad=z-m&_nc_cid=0&_nc_ht=interncache-prn&oh=da76d96fb61566cd0f232e6bbb0e4bcc&oe=5F701A82",
+          "creation_timestamp": 1598550993
+        }
+      ],
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598538144025,
+      "content": "You called Piotr.",
+      "call_duration": 2633,
+      "type": "Call"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598537032145,
+      "content": "https://de.tgbike.com/ebikes-c-1/",
+      "share": {
+        "link": "https://de.tgbike.com/ebikes-c-1/"
+      },
+      "type": "Share"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598535498927,
+      "content": "Pewnie",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598535269971,
+      "content": "Mozesz rozmawiac teraz?",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598535262983,
+      "content": "Przerwali nam rozmowe",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598512417764,
+      "content": "You called Piotr.",
+      "call_duration": 197,
+      "type": "Call"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598512210900,
+      "content": "Mozemy gadac",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598512207733,
+      "content": "Dobra dzwonil zaraz bedzie",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598512002628,
+      "content": "Ta dokladnie",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598511998407,
+      "content": "Wirus i kryzys a robic nie ma komu",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598511988207,
+      "content": "\u00c5\u00bbycie",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598511970497,
+      "content": "Tak pizda rozlazla ale ciezko znalezc kogos innego",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598511961595,
+      "content": "Spoko,  odezwij si\u00c4\u0099 na luzie jak za\u00c5\u0082atwisz z typem",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598511945072,
+      "content": "Twardy go\u00c5\u009b\u00c4\u0087  ;)",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598511934895,
+      "content": "Ogolnie jak poleza to mi obojetne dostosuje sie do Ciebie",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598511904065,
+      "content": "Juz 3 dni przychodzi",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598511894789,
+      "content": "Czekam na tego typa ma zaraz dzwonic",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598511786249,
+      "content": "Spoko. Up to u kiedy b\u00c4\u0099dziesz mia\u00c5\u0082 chwil\u00c4\u0099",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598511756185,
+      "content": "Zadzwonie za jakas godzinke albo jak besziesz mial czas dzis",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598511753756,
+      "sticker": {
+        "uri": "messages/stickers_used/39178562_1505197616293642_5411344281094848512_n_369239263222822.png"
+      },
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598511726755,
+      "content": "Peter nie moge teraz bo czekam na telefon od typa od okien",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598511694170,
+      "content": "You missed a call from Piotr.",
+      "call_duration": 0,
+      "type": "Call"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598511502872,
+      "content": "A w stronie kontakt specjalnie masz inne tlo niz mapa czy to Ci zmienic zeby bylo to samo?",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598511467234,
+      "content": "Ogarnalem to menu, pododawalem back button na podstrony cennika, jakies tam finishing touches dodalem, spacing itp,  jak cos Ci sie rzuci w oczy ze jest chujowe to powoedz zmienie..  A i w stronie  tej jak dzialamy sugerowal bym Ci uzyc albo zdjec albo ilustracji bo teraz masz pomieszanie stylow troche ale to up to you",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598388396735,
+      "content": "To pewnie ja cis tam zle doda\u00c5\u0082em",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598388376467,
+      "content": "Spoko. Na luzie",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598387248052,
+      "content": "Patrzylem nie wiem co tam sie odjebalo zerkne jutro doglebniej :)",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598379543161,
+      "content": "Aaa. Te podstrony przy cenniku porobi\u00c5\u0082em ale nie maja headera ani \u00c5\u00bcadnego jak by motywu strony. Zerkniesz w wolnej chwili ?",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598379267698,
+      "content": "Tylko backend zostaje",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598379261114,
+      "content": "\u00c5\u00bbeby prezentowa\u00c4\u0087",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598379254615,
+      "content": "Mysle ze juz gotowe powoli",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598379243037,
+      "content": "Header tez lekko zmienilem",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598379231569,
+      "content": "Zmieni\u00c5\u0082em kilka guzik\u00c3\u00b3w",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598379224632,
+      "content": "Ja doda\u00c5\u0082em cenniki",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598379216282,
+      "content": "Dzieki za dopaszenia. Lepiej ci wyszlo jak mi wiec tak zostawiamy",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598353646458,
+      "content": "Luz",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598351499217,
+      "content": "Dzieki. Zerkne p\u00c3\u00b3\u00c5\u00baniej",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598348345884,
+      "photos": [
+        {
+          "uri": "https://interncache-prn.fbcdn.net/v/t1.15752-0/q65/p480x480/118340922_233482867932417_7784504638967736902_n.jpg?_nc_sid=73a6a0&efg=eyJ1cmxnZW4iOiJwaHBfdXJsZ2VuX2NsaWVudC9pbW9nZW46RFlJTWVkaWFVdGlscyJ9&_nc_ad=z-m&_nc_cid=0&_nc_ht=interncache-prn&oh=52c35fd9eff77ee7158613ca1d23a6c6&oe=5F6D1350",
+          "creation_timestamp": 1598348344
+        },
+        {
+          "uri": "https://interncache-prn.fbcdn.net/v/t1.15752-0/q65/p480x480/118021367_331505147980090_8149754960678175783_n.jpg?_nc_sid=73a6a0&efg=eyJ1cmxnZW4iOiJwaHBfdXJsZ2VuX2NsaWVudC9pbW9nZW46RFlJTWVkaWFVdGlscyJ9&_nc_ad=z-m&_nc_cid=0&_nc_ht=interncache-prn&oh=3ebfe1da85f893b397f57bc473fdeadf&oe=5F702AAC",
+          "creation_timestamp": 1598348345
+        },
+        {
+          "uri": "https://interncache-prn.fbcdn.net/v/t1.15752-0/q65/p480x480/118209650_2636037026724719_7471361868159149008_n.jpg?_nc_sid=73a6a0&efg=eyJ1cmxnZW4iOiJwaHBfdXJsZ2VuX2NsaWVudC9pbW9nZW46RFlJTWVkaWFVdGlscyJ9&_nc_ad=z-m&_nc_cid=0&_nc_ht=interncache-prn&oh=8d6887a93fb7ff7402af87b6f83e65cb&oe=5F7022BB",
+          "creation_timestamp": 1598348344
+        },
+        {
+          "uri": "https://interncache-prn.fbcdn.net/v/t1.15752-0/q65/p480x480/118131582_329607064830741_5131855216260368390_n.jpg?_nc_sid=73a6a0&efg=eyJ1cmxnZW4iOiJwaHBfdXJsZ2VuX2NsaWVudC9pbW9nZW46RFlJTWVkaWFVdGlscyJ9&_nc_ad=z-m&_nc_cid=0&_nc_ht=interncache-prn&oh=99dee981f6605d7f52a769e5beacf5dc&oe=5F6C9F6E",
+          "creation_timestamp": 1598348344
+        }
+      ],
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598348322897,
+      "content": "Pozmienialem Ci pare rzeczy co chciales lacznie z czcionka...  Jak chchcesz zmienic spowrotem to albo daj znac",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598341603928,
+      "content": "Piotr called you.",
+      "call_duration": 1435,
+      "type": "Call"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598341456713,
+      "content": "https://mpinterio.pl/",
+      "share": {
+        "link": "https://mpinterio.pl/"
+      },
+      "type": "Share"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598340129701,
+      "content": "Ta",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598340119025,
+      "content": "Jetses ?",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598340091963,
+      "content": "Siema",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Sebastian Kut",
+      "timestamp_ms": 1598340033050,
+      "content": "Siema co tam?",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598296386768,
+      "content": "Nie spisz jeszcze?",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Piotr Konefal",
+      "timestamp_ms": 1598296375473,
+      "content": "You missed a call from Piotr.",
+      "call_duration": 0,
+      "type": "Call"
+    }
+  ],
+  "title": "Piotr Konefal",
+  "is_still_participant": true,
+  "thread_type": "Regular",
+  "thread_path": "inbox/PiotrKonefal_zKs7Nw0PPQ"
+}
