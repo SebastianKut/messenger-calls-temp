@@ -1,3 +1,5 @@
+
+
 document.querySelector("#read-button").addEventListener('click', function() {
 	if(document.querySelector("#file-input").files.length == 0) {
 		alert('Error : No file selected');
@@ -9,12 +11,12 @@ document.querySelector("#read-button").addEventListener('click', function() {
     displayArea.innerHTML = '';
 
 	// first file selected by user
-	var file = document.querySelector("#file-input").files[0];
+	let file = document.querySelector("#file-input").files[0];
 
 	// perform validation on file type & size if required
 
 	// read the file
-	var reader = new FileReader();
+	let reader = new FileReader();
 
 	// file reading started
 	reader.addEventListener('loadstart', function() {
@@ -44,19 +46,29 @@ document.querySelector("#read-button").addEventListener('click', function() {
             <h3>${message.sender_name}</h3>
             <p>${message.content}</p>
             <p>${message.type}</p>
-            <p>Duration: ${message.call_duration}</p>
-            <p>Date: ${message.timestamp_ms}</p>
+            <p>Duration: ${Math.floor(message.call_duration/60)} ${Math.floor(message.call_duration/60) === 1 ? 'minute' : 'minutes' }</p>
+            <p>Date: ${getDate(message.timestamp_ms)}, ${getTime(message.timestamp_ms)} </p>
             `;
             displayArea.innerHTML += callLog;
         })
         
-         
+        function msToDate(ms) {
+			let date = new Date(ms); 
+			return date.toString(); 
+		} 
+
+		function getDate(ms) {
+			 return msToDate(ms).slice(4,10) + ', ' + msToDate(ms).slice(10,15);
+		}
+
+		function getTime(ms) {
+			let date = new Date(ms); 
+			return date.toLocaleTimeString('en-US');
+		}
 
 
 
-
-
-	    console.log(text);
+	
 	});
 
 	// file reading failed
@@ -75,3 +87,5 @@ document.querySelector("#read-button").addEventListener('click', function() {
 	// read as text file
 	reader.readAsText(file);
 });
+
+
