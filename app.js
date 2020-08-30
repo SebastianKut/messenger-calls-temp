@@ -6,6 +6,8 @@ document.querySelector("#read-button").addEventListener('click', function() {
 		return;
 	}
 
+
+
     //reset display area
     let displayArea = document.getElementById('results');
     displayArea.innerHTML = '';
@@ -28,27 +30,38 @@ document.querySelector("#read-button").addEventListener('click', function() {
 	   // contents of file in variable     
         var text = e.target.result;
         //HERE RENDER TO JS OBJECT THEN FILTER AND RENDER TO WEBSITE
-        
+		
+		document.querySelector('#pdfContent').style.display = 'block';
+		document.querySelector('#pdf').style.display = 'inline-block';
+		document.querySelector('#step-3').style.display = 'inline-block';
 
         let messagesObject = JSON.parse(text);
 
         document.getElementById('users').innerHTML = ` 
-        ${messagesObject.participants[0].name} and ${messagesObject.participants[1].name}
-        `;
+        ${messagesObject.participants[0].name} and ${messagesObject.participants[1].name} call log history
+		`;
+		
+
         let callLog = '';
         let callsObject = messagesObject.messages.filter(message => {
            return message.type === 'Call';
         });
 
-        
+		document.getElementById('records').innerHTML = `
+		Total: ${callsObject.length} record(s)
+		`; 
+		
+
         callsObject.map(message => {
-            callLog = `
-            <h3>${message.sender_name}</h3>
-            <p>${message.content}</p>
-            <p>${message.type}</p>
-            <p>Duration: ${Math.floor(message.call_duration/60)} ${Math.floor(message.call_duration/60) === 1 ? 'minute' : 'minutes' }</p>
-            <p>Date: ${getDate(message.timestamp_ms)}, ${getTime(message.timestamp_ms)} </p>
-            `;
+			callLog = `
+			<tr>
+				<td>${getDate(message.timestamp_ms)}</td>
+				<td>${getTime(message.timestamp_ms)}</td>
+				<td>${message.sender_name}</td>
+				<td>${message.content}</td>
+				<td>${Math.floor(message.call_duration/60)} ${Math.floor(message.call_duration/60) === 1 ? 'minute' : 'minutes' }</td>
+            </tr>
+			`;
             displayArea.innerHTML += callLog;
         })
         

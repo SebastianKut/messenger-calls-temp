@@ -1,0 +1,88 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-upload {
+    width: 25%;
+    height: 30px;
+    padding: 0.1rem;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    padding: 0.1rem;
+    margin: 5px;
+    background-color: lightgray;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+}
+
+.btn:hover {
+    border: 1px solid gray;
+}
+
+.step {
+    margin: 5px;
+}
+
+.step span {
+    font-size: small;
+}
+
+#step-3, #pdf{
+    display: none;
+}
+
+#pdfContent {
+    border: 1px solid lightgray;
+    display: none;
+}
+
+#users, #records {
+    margin: 5px;
+}
+
+.container {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+th {
+    height: 2rem;
+    text-align: left;
+    padding: 0.3rem;
+    background-color: lightgray;
+}  
+
+td {
+    border-bottom: 1px solid lightgray;
+    padding: 0.3rem;
+  }
+
+ .watermark {
+     display: flex;
+     justify-content: flex-end;
+     padding: 5px;
+     margin-top: 1rem;
+ } 
