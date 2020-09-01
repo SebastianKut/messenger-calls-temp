@@ -68,8 +68,8 @@
             pdf.autoTable({html:'#table'});
         
             let finalY = pdf.previousAutoTable.finalY; //this gives you the value of the end-y-axis-position of the previous autotable.
-            pdf.setFontSize(8);
-            pdf.text([`${document.getElementById('records').innerText}`,'Messenger call log extracted and printed using online tool from messengercalls.com'], 20, finalY + 30);
+            pdf.setFontSize(10);
+            pdf.text([`${document.getElementById('records').innerText}`,'Call history extracted and printed using online tool from messengercalls.com'], 20, finalY + 30);
            
             formatHeaderAndFooter(pdf, pdf.internal.getNumberOfPages());
 
