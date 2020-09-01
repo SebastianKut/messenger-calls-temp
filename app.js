@@ -38,7 +38,7 @@ document.querySelector("#read-button").addEventListener('click', function() {
         let messagesObject = JSON.parse(text);
 
         document.getElementById('users').innerHTML = ` 
-        ${messagesObject.participants[0].name} and ${messagesObject.participants[1].name} call log history
+        ${messagesObject.participants[0].name} and ${messagesObject.participants[1].name} - Messenger call log history
 		`;
 		
 
