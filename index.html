@@ -13,7 +13,7 @@
         <input type="file" id="file-input" class="btn-upload"/>
         <h2 class="step">Step 2: <span>Click "Show logs" to see your messenger call history</span></h2>
         <button id="read-button" class="btn">Show logs</button>
-        <h2 id="step-3" class="step">Step 3: <span>Click "Export" to save your logs in pdf format</span></h2>
+        <h2 id="step-3" class="step">Step 3: <span>Click "Export" to save your logs in pdf format (Firefox only)</span></h2>
         <button id="pdf" onclick="generate()" class="btn">Export</button>
     </div>
     <div id="pdfContent" class="container">
@@ -44,7 +44,7 @@
     <script src="jspdf.plugin.autotable.js"></script>
     <script type="module" src="app.js"></script>
     <script>
-        //Set up margin values
+        // //Set up margin values
         margins = {
         top: 30,
         bottom: 30,
@@ -54,33 +54,16 @@
         // GENERATE PDF
         function generate() {
             var pdf = new jsPDF('l', 'pt', 'a4');
-            // pdf.fromHTML(
-            //     document.getElementById('pdf-title'), 
-            //     margins.left, 
-            //     margins.top, 
-            //     {width: margins.width}, 
-            //     function(){
-            //         formatHeaderAndFooter(pdf, pdf.internal.getNumberOfPages());
-            //     }, 
-            //     margins
-            // );
             
             pdf.autoTable({html:'#table'});
         
             let finalY = pdf.previousAutoTable.finalY; //this gives you the value of the end-y-axis-position of the previous autotable.
             pdf.setFontSize(10);
-            pdf.text([`${document.getElementById('records').innerText}`,'Call history extracted and printed using online tool from messengercalls.com'], 20, finalY + 30);
+            pdf.text([`${document.getElementById('records').innerText}`,'Call history extracted and printed using online tool messengercalls.com'], 40, finalY + 30);
            
             formatHeaderAndFooter(pdf, pdf.internal.getNumberOfPages());
-
-            //this is how it outputs pdf. I want this invisible on my page 
-            var iframe = document.createElement('iframe');
-            iframe.setAttribute(
-                'style',
-                'display: none'    
-            );
-            document.body.appendChild(iframe);
-            iframe.src = pdf.output('datauristring');
+            pdf.save(`messengercalls.pdf`);
+    
         };
 
         //ADD HEADER AND FOOTER TO EACH PAGE
@@ -99,7 +82,7 @@
         function createHeader(doc) {
             doc.setFontSize(15);
             doc.setTextColor(40);
-            doc.setFontStyle('normal');
+            doc.setFontStyle('bold');
             
             doc.text(`${document.getElementById('users').innerText}`, margins.left, 20);
             doc.setLineCap(2);
@@ -112,6 +95,7 @@
             var str = "Page " + pageNumber + " of " + totalPages
         
             doc.setFontSize(10);
+            doc.setFontStyle('normal');
             doc.text(str, margins.left, doc.internal.pageSize.height - 10);
             
         };
