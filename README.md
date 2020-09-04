@@ -1,5 +1,5 @@
 # messengerCallLogs
-## Wensite link - https://sebastiankut.github.io/messengerCallLogs/
+## Website link - https://sebastiankut.github.io/messenger-call-logs/
 
 Client side tool to extract Facebook Messenger Call Log form JSON file. 
 
