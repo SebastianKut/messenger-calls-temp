@@ -36,7 +36,13 @@
         >
       </h2>
       <button id="pdf" onclick="generate()" class="btn">Export</button>
+      <div>
+        <button onclick="checkout()" id="checkout" class="btn">
+          Checkout test
+        </button>
+      </div>
     </div>
+
     <div id="pdfContent" class="container">
       <div id="pdf-title" class="row">
         <h2 id="users"></h2>
@@ -125,6 +131,31 @@
         doc.setFontSize(10);
         doc.setFontStyle('normal');
         doc.text(str, margins.left, doc.internal.pageSize.height - 10);
+      }
+
+      //CHECKOUT
+      function checkout() {
+        fetch('http://localhost:3000/create-checkout-session', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            items: [{ id: 1, quantity: 1 }],
+          }),
+        })
+          .then((res) => {
+            // fetch doesnt fail on its own so handling failure and success with if
+            if (res.ok) return res.json();
+            return res.json().then((json) => Promise.reject(json));
+          })
+          .then(({ url }) => {
+            console.log(url);
+            // window.location = url;
+          })
+          .catch((e) => {
+            console.error(e.error);
+          });
       }
     </script>
   </body>
