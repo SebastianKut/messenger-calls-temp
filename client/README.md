@@ -13,5 +13,3 @@ They can also export call log to .pdf file (currently only supports Mozzila Fire
 Application uses following technologies: HTML, CSS, JavaScript and jsPDF Javascript library.
 
 Start https://www.youtube.com/watch?v=1r-F3FIONl8 from 16.30 (creating api key)
-
-test change
