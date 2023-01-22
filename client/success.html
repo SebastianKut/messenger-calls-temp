@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Success</h1>
-</body>
+    <!-- Call server if response 200 then open pdf converter, if not redirect to expired.html-->
+    <button id="download-btn">Download</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script>
+      document
+        .querySelector('#download-btn')
+        .addEventListener('click', downloadCheck);
+      //Download
+      function downloadCheck() {
+        fetch('http://localhost:3000/download/check', {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({}),
+          credentials: 'include',
+        })
+          .then((res) => {
+            if (res.ok) return res;
+            return res.json().then((json) => Promise.reject(json));
+          })
+          .then((res) => {
+            if (res.status === 200) {
+              console.log('Response from server', res);
+              alert('You can use app');
+            }
+            if (res.status === 401) {
+              alert('Fuck off');
+            }
+          })
+          .catch((e) => {
+            console.error(e.error);
+          });
+      }
+    </script>
+  </body>
 </html>
