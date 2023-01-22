@@ -15,10 +15,10 @@ app.use(
 );
 app.use(express.urlencoded({ extended: true }));
 
-const db = require('./models/index');
-db.sequelize.sync();
+// const db = require('./models/index');
+// db.sequelize.sync();
 
-require('./routes/articles.routes')(app);
+// require('./routes/articles.routes')(app);
 
 const stripe = require('stripe')(process.env.STRIPE_PRIVATE_KEY);
 
@@ -93,26 +93,30 @@ app.post('/download/check', async (req, res) => {
   // Fetch pierdolony nie wysyla cookie
   const sessionId = req.cookies;
   console.log('Cookie from client', sessionId);
+  console.log('Temo session array', tempSessionArray);
 
   // If cookie exists check sessionId from cookie in db if still valid and if downloads < 3
-  if (tempSessionArray !== []) {
+  if (tempSessionArray.length > 0) {
     const record = tempSessionArray.find(
       (element) => element.session === sessionId.Messenger_call_logs_session
     );
+    console.log('Record found', record);
 
-    if (record.valid && record.downloadNumber < 3) {
-      record.downloadNumber += 1;
-      res.status(200);
+    if (record.valid && record.downloadsNumber < 3) {
+      record.downloadsNumber += 1;
+    return res.status(200).send('Success');
     }
-    if (record.downloadNumber >= 3) {
-      res.status(401);
+
+    if (record.valid && record.downloadsNumber >= 3) {
+      record.valid = false;
+     return res.status(401).send('Fail');
     }
   }
 
   // if downloads >= 3 mark in db as session invalid and delete cookie
-
+  
   // if valid send success and increment downloads number in db
-  res.status(200).send('Hi');
+  res.status(401).send('Fail');
 });
 
 app.listen(3000);

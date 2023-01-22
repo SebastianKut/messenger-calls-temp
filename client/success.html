@@ -11,9 +11,9 @@
     <!-- Call server if response 200 then open pdf converter, if not redirect to expired.html-->
     <button id="download-btn">Download</button>
     <script>
-      document
-        .querySelector('#download-btn')
-        .addEventListener('click', downloadCheck);
+     const downloadBtn = document.querySelector('#download-btn');
+      downloadBtn.addEventListener('click', downloadCheck);
+
       //Download
       function downloadCheck() {
         fetch('http://localhost:3000/download/check', {
@@ -26,16 +26,12 @@
           credentials: 'include',
         })
           .then((res) => {
-            if (res.ok) return res;
-            return res.json().then((json) => Promise.reject(json));
-          })
-          .then((res) => {
+            console.log('Response from server', res);
             if (res.status === 200) {
-              console.log('Response from server', res);
               alert('You can use app');
             }
-            if (res.status === 401) {
-              alert('Fuck off');
+            if (res.status !== 200) {
+              alert('Unauthorised');
             }
           })
           .catch((e) => {
