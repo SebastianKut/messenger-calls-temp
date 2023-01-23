@@ -95,12 +95,12 @@ app.post('/download/check', async (req, res) => {
   console.log('Cookie from client', sessionId);
   console.log('Temo session array', tempSessionArray);
 
+  if(!sessionId.Messenger_call_logs_session) return  res.status(401).send('Fail');
   // If cookie exists check sessionId from cookie in db if still valid and if downloads < 3
-  if (tempSessionArray.length > 0) {
+  if (tempSessionArray.length) {
     const record = tempSessionArray.find(
       (element) => element.session === sessionId.Messenger_call_logs_session
     );
-    console.log('Record found', record);
 
     if (record.valid && record.downloadsNumber < 3) {
       record.downloadsNumber += 1;
